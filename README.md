@@ -8,7 +8,7 @@ Free and open, and every file lives in your own GitHub. **To start, you need a p
 
 **Start here:** [PROMPT.md](PROMPT.md) is the installer. Copy it into a new Claude chat and answer one question at a time. It copies the team's files from [sales/](sales/) into a private repository in your own GitHub and sets them up for your business.
 
-**Built with Scaevola.** This is the sales team that reports to the CRO seat of the Scaevola executive team we run our own business on, with our details taken out. That executive team reviewed it, seat by seat. It's out in the open early on purpose, because GTM and AI move too fast to wait for perfect. Use it, push it, improve it, and share what you made in [Discussions](https://github.com/davidlionel/scaevola-sales/discussions). Every release makes it better for everyone.
+**Built with Scaevola.** This is the sales team that reports to the CRO seat of the Scaevola executive team we run our own business on, with our details taken out. That executive team reviewed it, seat by seat. It's out in the open early on purpose, because GTM and AI move too fast to wait for perfect. Use it, push it, improve it, and share what you made in the [Scaevola community](https://github.com/davidlionel/scaevola/discussions), one room for the whole executive team and every team that reports to it. Every release makes it better for everyone.
 
 ## Run it on its own, or under your Scaevola team
 - **On its own:** you're the decider, and the sales team reports to you.
@@ -61,7 +61,7 @@ If a step gets too technical, your setup is complex, or you hit any other blocke
 To update, paste [PROMPT.md](PROMPT.md) into Claude Code with your sales repository open; it shows you each change first. Your method, business packs, lessons and decisions are never overwritten, and nothing changes until you say yes. Your weekly review tells you when there's a new version. What's new is in [CHANGELOG.md](CHANGELOG.md).
 
 ## Support
-- **Setups and ideas:** share them in [Discussions](https://github.com/davidlionel/scaevola-sales/discussions).
+- **Setups and ideas:** share them in the [Scaevola community](https://github.com/davidlionel/scaevola/discussions), in the Sales category.
 - **Bugs:** [open an issue](https://github.com/davidlionel/scaevola-sales/issues). Answers are public, so the next person finds them too.
 - **Setup or GTM help:** [simplicitygtm.com](https://simplicitygtm.com) or [david@simplicitygtm.com](mailto:david@simplicitygtm.com?subject=Scaevola%20Sales%20setup).
 

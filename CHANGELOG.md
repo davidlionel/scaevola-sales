@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.3 (2026-11-26)
+- Community: share setups and ideas in the one Scaevola community room on the core repo, so every team's users are in the same place.
+- Files that changed: README.md, VERSION, CHANGELOG.md.
+
 ## 1.1.2 (2026-11-26)
 - README: plainer wording for how the numbers are worked out.
 - Files that changed: README.md, VERSION, CHANGELOG.md.
