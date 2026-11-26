@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2 (2026-11-26)
+- README: plainer wording for how the numbers are worked out.
+- Files that changed: README.md, VERSION, CHANGELOG.md.
+
 ## 1.1.1 (2026-11-26)
 Fixes from the executive team's review of 1.1.0.
 - Safer installs and updates: install now checks every file is text or CSV before copying (a settings file could run commands), updates list files a release removed and delete them only on your yes, and an update with no tag for your version shows every difference and asks.

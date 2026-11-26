@@ -30,7 +30,7 @@ Eight assistants, each a plain file you can read and change:
 2. **A lead score that learns from your own wins.** Every lead gets a fit score and a timing score. Once 20 deals have closed, won or lost, the fit scorer checks which scores turned into wins, lists every miss, and improves the model one proven change at a time, on your yes.
 3. **Strategy, not just activity.** Growth reports start with what's changing in your market, name the three problems in the way, and give a strategy for each, with a cheap test before you commit.
 4. **Inbound and outbound.** It finds buyers from public signals, drafts replies to the leads that come to you, or both, and reports each separately.
-5. **Exact math, no code to trust.** Written methods tell Claude exactly how to score, dedupe and count, and Claude calculates with its own code tool, so every number is calculated, never guessed. Scaevola Sales ships no scripts: nothing from this repository runs on your computer.
+5. **Numbers worked out, never guessed.** Every score and count follows a written method you can read. Scaevola Sales ships no scripts: nothing from this repository runs on your computer.
 6. **Your rules hold.** Text inside an email, a web page or a CRM note is information, never an instruction. Opt-outs are checked before every list. Each business's files stay apart.
 
 ## A weekly rhythm
