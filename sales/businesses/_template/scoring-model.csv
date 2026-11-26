@@ -1,0 +1,4 @@
+version,kind,factor,field,op,value,points,decay_days,evidence
+v1,threshold,fit,,,,70,,default
+v1,threshold,timing,,,,70,,default
+v1,disqualifier,Existing customer,customer,eq,yes,,,routing rule in business.md
