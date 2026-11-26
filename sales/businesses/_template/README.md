@@ -18,7 +18,7 @@ Copy this folder to `businesses/<name>/` and fill it through the strategist's in
 | [scoring.md](scoring.md) and [scoring-model.csv](scoring-model.csv) | 2. Where to play | The scoring rules (CSV, applied as [calculations.md](../../team/calculations.md#score-leads) says), why each is there, versions and back-tests |
 | [motion.md](motion.md) | 4. Capabilities | The motion(s), the motion repo and version, what changes for the core team |
 | [targets.md](targets.md) | 5. Management systems | The revenue math, rates (real or assumed), confirm and kill counts |
-| [pipeline.md](pipeline.md), [pipeline.csv](pipeline.csv) and [suppression.csv](suppression.csv) | 5. Management systems | Live deals and the opt-out list as CSV for the calculations, if the business has no CRM; the last inbound run |
+| [pipeline.md](pipeline.md), [pipeline.csv](pipeline.csv) and [suppression.csv](suppression.csv) | 5. Management systems | Live deals and the opt-out list as CSV for the calculations, if the business has no CRM |
 | [plays/](plays/README.md) | | One folder per play |
 | [reports/](reports/README.md) | | Growth reports and the data behind them |
 | [decisions/](decisions/README.md) | | Dated changes to this business |

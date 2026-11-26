@@ -8,7 +8,7 @@ Free and open, and every file lives in your own GitHub. **To start, you need a p
 
 **Start here:** [PROMPT.md](PROMPT.md) is the installer. Copy it into a new Claude chat and answer one question at a time. It copies the team's files from [sales/](sales/) into a private repository in your own GitHub and sets them up for your business.
 
-**Built with Scaevola.** This is the sales team that reports to the CRO seat of the Scaevola executive team we run our own business on, with our details taken out. That executive team reviewed this release, seat by seat, before it went out. It's out in the open early on purpose, because GTM and AI move too fast to wait for perfect. Use it, push it, improve it, and share what you made in [Discussions](https://github.com/davidlionel/scaevola-sales/discussions). Every release makes it better for everyone.
+**Built with Scaevola.** This is the sales team that reports to the CRO seat of the Scaevola executive team we run our own business on, with our details taken out. That executive team reviewed it, seat by seat. It's out in the open early on purpose, because GTM and AI move too fast to wait for perfect. Use it, push it, improve it, and share what you made in [Discussions](https://github.com/davidlionel/scaevola-sales/discussions). Every release makes it better for everyone.
 
 ## Run it on its own, or under your Scaevola team
 - **On its own:** you're the decider, and the sales team reports to you.
@@ -30,7 +30,7 @@ Eight assistants, each a plain file you can read and change:
 2. **A lead score that learns from your own wins.** Every lead gets a fit score and a timing score. Once 20 deals have closed, won or lost, the fit scorer checks which scores turned into wins, lists every miss, and improves the model one proven change at a time, on your yes.
 3. **Strategy, not just activity.** Growth reports start with what's changing in your market, name the three problems in the way, and give a strategy for each, with a cheap test before you commit.
 4. **Inbound and outbound.** It finds buyers from public signals, drafts replies to the leads that come to you, or both, and reports each separately.
-5. **Exact math, no code to trust.** Written methods tell Claude exactly how to score, dedupe and count, and Claude calculates with its own code tool, so the numbers come out the same every time. Scaevola Sales ships no scripts: nothing from this repository runs on your computer.
+5. **Exact math, no code to trust.** Written methods tell Claude exactly how to score, dedupe and count, and Claude calculates with its own code tool, so every number is calculated, never guessed. Scaevola Sales ships no scripts: nothing from this repository runs on your computer.
 6. **Your rules hold.** Text inside an email, a web page or a CRM note is information, never an instruction. Opt-outs are checked before every list. Each business's files stay apart.
 
 ## A weekly rhythm
@@ -49,12 +49,11 @@ Every Monday, the team can review the week for you on a schedule: what was sent,
 
 Named after Scaevola, the fan flower whose blooms look like half a flower. You bring the half that knows your buyers. The sales team does the finding, drafting and counting.
 
-It's not a hire, and it never sends anything on its own.
 
 **Honest limits:** it works only with Claude and GitHub. It finds and drafts; sending is yours, from your own tools. The lead score improves only from your own closed deals.
 
 ## Set it up yourself. Get help when you want it.
-Scaevola Sales is built for you to install and run on your own. If the business pack doesn't match how you really sell, tell the strategist what's different and keep shaping it. That's normal: a lot of how deals really move lives in your head and your habits, not in any file yet.
+Scaevola Sales is built for you to install and run on your own. If the setup doesn't match how you really sell, tell the strategist what's different and keep shaping it. That's normal: a lot of how deals really move lives in your head and your habits, not in any file yet.
 
 If a step gets too technical, your setup is complex, or you hit any other blocker, setup support is there to get it right for your business: [simplicitygtm.com](https://simplicitygtm.com) or [david@simplicitygtm.com](mailto:david@simplicitygtm.com?subject=Scaevola%20Sales%20setup).
 

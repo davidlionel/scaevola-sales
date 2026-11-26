@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.1 (2026-11-26)
+Fixes from the executive team's review of 1.1.0.
+- Safer installs and updates: install now checks every file is text or CSV before copying (a settings file could run commands), updates list files a release removed and delete them only on your yes, and an update with no tag for your version shows every difference and asks.
+- More exact deduping: personal email domains (gmail.com and similar) no longer match each other, company names are cleaned the same way every time, and only rows already kept count as repeats.
+- Clearer calculations: back-tests use each lead's recorded band, tallies keep rows with no date, growth reports count the last 12 months in the file, and the 20-record rule applies to rates, not report shares.
+- Setup requests: email with the subject "Scaevola Sales setup".
+- README: clearer wording and no outdated claims.
+- Files that changed: README.md, PROMPT.md, sales/team/calculations.md, sales/businesses/_template/README.md.
+
 ## 1.1.0 (2026-11-26)
 No code, for your security.
 - The scripts are gone. Every calculation (scoring, freshness, deduping, back-tests, tallies, forecasts, growth-report math) is now a written method in team/calculations.md, and Claude calculates with its own code tool. Nothing from this repository runs on your computer.

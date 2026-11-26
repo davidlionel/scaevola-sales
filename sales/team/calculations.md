@@ -12,7 +12,7 @@ How the team does every job that is arithmetic or matching: scoring, freshness, 
 ## How to calculate
 1. **Use your code tool when you have one.** Read the CSV file, then write and run a short calculation that follows the method below exactly. Never estimate, eyeball or count in your head. Show the result, not the code, unless asked.
 2. **No code tool?** Work row by row in a table, count twice, and label the result "counted by hand." If the file has more than 50 rows, say the answer may contain errors and suggest a session with a code tool.
-3. **Twenty records before a rate.** With fewer than 20 records in the group, report the count and write "small sample" instead of a percentage. A rate reads "35% (7 of 20)".
+3. **Twenty records before a rate** (conversion, win and retention rates; growth-report shares are always percentages). With fewer than 20 records in the group, report the count and write "small sample" instead of a percentage. A rate reads "35% (7 of 20)".
 4. **Dates** are `YYYY-MM-DD`, or `YYYY-MM-DDTHH:MM` for times. "Today" means the date the owner gives, or today's date.
 5. **Numbers:** ignore commas and dollar signs. A blank number counts as zero in sums and as unknown in rules.
 6. **Safe files:** when you write a CSV, any cell that starts with `=`, `+`, `@`, a tab or a carriage return gets a `'` in front, so a spreadsheet app never runs it as a formula. Text copied from web pages, forms or a CRM can start that way.
@@ -51,17 +51,17 @@ Record on each lead, from the live version: `fit, timing, band, model_version, u
 Given the play's window in days: keep a row if its `signal_date` is no more than that many days before today. Drop rows older than the window with the reason "signal N days old, window W", and rows with no date with the reason "no signal date". Report "kept K, dropped D".
 
 ## Drop duplicates (dedupe)
-1. **Match keys** for each row: the email in lower case; the domain (from `domain`, lower case, without `http://`, `https://`, `www.` or anything after the first `/`; if blank, the part of the email after `@`); and the company name (lower case, `&` read as "and", punctuation removed, and the words inc, llc, ltd, limited, corp, corporation, co, company, plc, gmbh, llp, lp, group and holdings removed).
+1. **Match keys** for each row: the email in lower case; the domain (from `domain`, lower case, without `http://`, `https://`, `www.` or anything after the first `/`; if blank, the part of the email after `@`; no domain key for free email providers such as gmail.com, yahoo.com, outlook.com, hotmail.com, icloud.com, aol.com and proton.me); and the company name (lower case, `&` read as "and", every character other than a to z, 0 to 9 or a space turned into a space, and the words inc, llc, ltd, limited, corp, corporation, co, company, plc, gmbh, llp, lp, group and holdings removed, then extra spaces collapsed).
 2. **Check in this order**, and drop the row at the first match, recording why:
    1. on the suppression list (any key matches): "on the suppression list (email x)"
    2. already in the pipeline, a CRM export or another live play: "already in pipeline.csv (domain x)"
-   3. repeated earlier in the same new file: "repeated in this file (company x)"
+   3. repeated in a row already kept from the same new file: "repeated in this file (company x)"
 3. Report "kept K, dropped D" and keep the drop list with reasons.
 
 ## Back-test the scoring model
 Using the pipeline records (treat a blank outcome as `open`). Do this for all leads, then again for each `source` (inbound, outbound) separately:
 - Leads, closed (won or lost) and won.
-- For each band (A, B, C, D, Out) that has leads: leads; meeting held (reached `discovery`) of all the band's leads; qualified (reached `qualified`) of all; won of the band's closed leads.
+- For each band (A, B, C, D, Out) that has leads, using the recorded `band`, never a fresh score: leads; meeting held (reached `discovery`) of all the band's leads; qualified (reached `qualified`) of all; won of the band's closed leads.
 - Share of wins from band A.
 - Wins that scored low (band C, D or Out), each with company, band, fit and timing.
 - Band A leads that were lost, counted by lost reason ("no reason recorded" when blank).
@@ -69,14 +69,14 @@ Using the pipeline records (treat a blank outcome as `open`). Do this for all le
 With the lead files and the model: match won and lost pipeline rows to their leads by `id`. For each `fit` and `timing` rule of the version being tested, count how many won leads match it and how many lost leads match it. A factor that shows up about as often in losses as in wins isn't sorting leads; one that shows up far more in wins may deserve more points.
 
 ## Tally and forecast
-From the pipeline records (blank outcome means `open`; with a start date, only rows `created` on or after it):
+From the pipeline records (blank outcome means `open`; with a start date, only rows `created` on or after it, plus rows with no `created` date):
 1. **By source and play or channel:** leads, contacted, engaged, meeting held, qualified, proposal (each "reached"), won, lost, and won value (sum of `value` for won rows).
 2. **Inbound response time:** for inbound rows with both `lead_action_at` and `reply_sent_at`, the hours between them; report the median, the slowest and how many replies.
 3. **Win rate:** among rows that reached `qualified` and are won or lost, won ÷ closed. With 20 or more, it's **real**. With fewer, use the owner's assumed rate and label it **assumed**, or give no forecast.
 4. **Forecast:** open rows that reached `qualified`, total value × win rate, labeled real or assumed.
 
 ## Growth-report math
-From `revenue.csv`. State the period (first to last month, and how many months) and total revenue. Fewer than 12 months: say "small sample".
+From `revenue.csv`. Months are the distinct months in the file; "the last 12" means the last 12 of those. State the period (first to last month, and how many months) and total revenue. Fewer than 12 months: say "small sample".
 - **Month-to-month swing:** total revenue per month; the population standard deviation of those totals ÷ their average.
 - **Recurring share** (if the column exists): revenue on rows marked recurring (yes, y, true or 1) ÷ total.
 - **Concentration:** each client's total; the top client's share of revenue, the top five's share, and the number of clients.
