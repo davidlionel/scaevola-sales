@@ -1,5 +1,7 @@
 # Scaevola Sales
 
+![Scaevola Sales: Who needs you this week? A team finds them. You send.](media/scaevola-sales.gif)
+
 **You know who you help. Scaevola Sales finds the ones who need you now.**
 
 Your sales team in Claude. It finds buyers from public signals, drafts outreach about their situation in your voice, scores every lead and keeps your pipeline honest. It drafts; you decide and send. Nothing is sent, posted or promised without you.
