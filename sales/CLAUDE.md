@@ -2,7 +2,7 @@
 
 Last updated: [YYYY-MM-DD]
 
-This repository is [Owner's first name]'s sales team, set up with Scaevola Sales [version]. It sells for [Owner's first name]'s own businesses and, if they take them on, for clients. Agents draft. [Owner's first name] decides.
+This repository is [Owner's first name]'s sales team, set up with Scaevola Sales [version] (files from commit [source commit]). It sells for [Owner's first name]'s own businesses and, if they take them on, for clients. Agents draft. [Owner's first name] decides.
 
 **Mode:** [on its own / bolted on to Scaevola, team repository: name]. See [team/operating-modes.md](team/operating-modes.md).
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.4 (2026-11-26)
+- Updates no longer depend on release tags. Setup records the exact version of the files it installed from (the source commit) in your CLAUDE.md, and updates compare against it, so your own edits are always told apart from what a release changed.
+- Setups before 1.1.4 still work: the update uses the release tag if there is one, and otherwise shows both copies and asks.
+- Files that changed: PROMPT.md, sales/CLAUDE.md, VERSION, CHANGELOG.md.
+
 ## 1.1.3 (2026-11-26)
 - Community: share setups and ideas in the one Scaevola community room on the core repo, so every team's users are in the same place.
 - Files that changed: README.md, VERSION, CHANGELOG.md.
